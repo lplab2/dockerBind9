@@ -2,8 +2,6 @@ FROM debian:sid-slim
 MAINTAINER meti@lplab.net
 
 ENV BIND_USER=bind \
-    BIND_VERSION=1:9.9.5 \
-    WEBMIN_VERSION=1.8 \
     DATA_DIR=/data
 
 RUN rm -rf /etc/apt/apt.conf.d/docker-gzip-indexes \
