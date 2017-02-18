@@ -76,6 +76,8 @@ if [[ -z ${1} ]]; then
     /etc/init.d/webmin start
   fi
 
+/etc/init.d/rsyslog start
+
   echo "Starting named..."
   exec $(which named) -u ${BIND_USER} ${EXTRA_ARGS}
 else
