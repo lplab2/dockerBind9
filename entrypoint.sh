@@ -77,7 +77,7 @@ if [[ -z ${1} ]]; then
   fi
 
   echo "Starting named..."
-  exec $(which named) -u ${BIND_USER} -g ${EXTRA_ARGS}
+  exec $(which named) -u ${BIND_USER} ${EXTRA_ARGS}
 else
   exec "$@"
 fi
