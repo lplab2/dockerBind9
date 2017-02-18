@@ -11,8 +11,6 @@ RUN apt-get -y dist-upgrade
 
 RUN apt-get install -y wget gnupg procps busybox less
 
-RUN apt-get install -y rsyslog
-
 RUN wget http://www.webmin.com/jcameron-key.asc -qO - | apt-key add - \
  && echo "deb http://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list \
  && apt-get update
